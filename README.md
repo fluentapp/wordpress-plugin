@@ -21,7 +21,7 @@ This plugin will add the Fluent Analytics tracker code to you website.
   
 # Frequently Asked Questions
   
-= How do I use this plugin? =
+# How do I use this plugin?
   
 Note:This plugin will only work if you have an active account with Fluent Analytics.
 
