@@ -14,24 +14,27 @@ require 'page.php';
 // Get the plugin settings.
 $settings = get_option('fluent_analytics_option_name');
 
-
 // Get the URL of the external JS script.
 $fluentapp_js_script_domain = @$settings['domain_0'];
 
-
+// Get the enabled flag
+$fluentapp_js_script_enabled = @$settings['enabled'];
 
 function fluentapp_js_script_load() {
     // Add the external JS script to the front-end.
-    wp_enqueue_script(
-            'fluentanalytics',
-            'https://app.fluentapp.io/fluentanalytics.js',
-            array(),
-            '1.0.0',
-            array(
-                'strategy' => 'defer',
-                'in_footer' => false
-            )
-    );
+    global $fluentapp_js_script_enabled;
+    if ($fluentapp_js_script_enabled) {
+        wp_enqueue_script(
+                'fluentanalytics',
+                'https://app.fluentapp.io/fluentanalytics.js',
+                array(),
+                '1.0.0',
+                array(
+                    'strategy' => 'defer',
+                    'in_footer' => false
+                )
+        );
+    }
 }
 
 function add_data_to_script($tag, $handle, $src) {
@@ -44,5 +47,4 @@ function add_data_to_script($tag, $handle, $src) {
 
 add_filter('script_loader_tag', 'add_data_to_script', 10, 3);
 add_action('wp_enqueue_scripts', 'fluentapp_js_script_load');
-
 
