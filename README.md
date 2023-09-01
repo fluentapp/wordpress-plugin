@@ -1,15 +1,17 @@
 # Fluent Analytics
  
-Contributors: fluentapp 
-Tags: Web Analytics
-Requires at least: 5.5
-Tested up to: 6.3
-Stable tag: 1.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Contributors: fluentapp\
+Tags: Web Analytics\
+Requires at least: 5.5\
+Tested up to: 6.3\
+Stable tag: 1.0\
+License: GPLv2 or later\
+License URI: http://www.gnu.org/licenses/gpl-2.0.html\
   
 This plugin will add the Fluent Analytics tracker code to you website.
-  
+
+Note: This is not a stand-alone plugin. You should have an active [Fluent Analytics](https://fluentapp.io) account.
+
 # Description
   
 This plugin will add the Fluent Analytics tracker code to you website.
@@ -23,7 +25,7 @@ This plugin will add the Fluent Analytics tracker code to you website.
   
 # How do I use this plugin?
   
-Note:This plugin will only work if you have an active account with Fluent Analytics.
+Note:This plugin will only work if you have an active account with [Fluent Analytics](https://fluentapp.io).
 
 After activating the plugin, go the the plugin settings page and enter your website domain. That's it, this should start serving the tracker code on your website.
   
