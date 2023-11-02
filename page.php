@@ -13,7 +13,7 @@ class FluentAnalytics {
     function check_plugin_version() {
         // this will run your default option setup if the version does not exist
         if (!defined('IFRAME_REQUEST') &&  get_option( 'fluent_plugin_version' ) == null) {
-            update_option('fluent_plugin_version', '1.0.0');
+            update_option('fluent_plugin_version', '1.0.3');
             $this->setup_options();
         }
     }

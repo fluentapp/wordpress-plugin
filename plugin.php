@@ -3,7 +3,7 @@
 // Plugin Name: Fluent Analytics
 // Plugin URI: https://github.com/fluentapp/wordpress-plugin
 // Description: This plugin adds a JavaScript script to the header of your website to track website traffic.
-// Version: 1.0.0
+// Version: 1.0.3
 // Author: fluent App
 // Author URI: https://fluentapp.io
 // License: MIT
@@ -28,7 +28,7 @@ function fluentapp_js_script_load() {
                 'fluentanalytics',
                 'https://app.fluentapp.io/fluentanalytics.js',
                 array(),
-                '1.0.1',
+                '1.0.3',
                 array(
                     'strategy' => 'defer',
                     'in_footer' => false
