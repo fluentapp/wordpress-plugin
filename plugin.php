@@ -28,7 +28,7 @@ function fluentapp_js_script_load() {
                 'fluentanalytics',
                 'https://app.fluentapp.io/fluentanalytics.js',
                 array(),
-                '1.0.0',
+                '1.0.1',
                 array(
                     'strategy' => 'defer',
                     'in_footer' => false
